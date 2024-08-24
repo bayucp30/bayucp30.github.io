@@ -21,6 +21,9 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,10 +32,12 @@
     <section id="hero"
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
-            <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-            <h1>Kiki & Bayu</h1>
-            <p>Mengundang Anda untuk hadir di resepsi pernikahan kami</p>
-            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+            <h4 data-aos="fade-up" data-aos-duration="3000">Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+            <h1 data-aos="fade-up" data-aos-duration="2500">Kiki & Bayu</h1>
+            <p data-aos="fade-up" data-aos-duration="2000">Mengundang Anda untuk hadir di resepsi pernikahan kami</p>
+            <a href="#home" class="btn btn-lg" style="margin-top: 160px; opacity: 0.8;" data-aos="fade-up"
+                data-aos-duration="1500" onclick="enableScroll()">Buka Undangan<br><i
+                    class="bi bi-envelope-open-heart"></i></a>
         </main>
     </section>
 
@@ -40,11 +45,11 @@
     <nav class="navbar navbar-expand-md sticky-top mynavbar">
         <div class="container">
             <a class="navbar-brand" href="#">The Wedding of Kiki & Bayu</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            </button> -->
+            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kiki & Bayu</h5>
@@ -60,7 +65,7 @@
                         <a class="nav-link" href="#gifts">gifts</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -69,16 +74,18 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2>Acara Pernikahan</h2>
-                    <div class="simply-countdown"></div>
-                    <h3>Diselenggarakan pada 25 Oktober 2024 di Pujon, Kab. Malang.</h3>
-                    <p>Maka dari itu, dengan segala hormat, kami bermaksut mengundang Bapak/Ibu, Sandara/i, untuk hadir
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Acara Pernikahan</h2>
+                    <div class="simply-countdown" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h3 data-aos="fade-up" data-aos-duration="1000">Diselenggarakan pada 25 Oktober 2024 di Pujon, Kab.
+                        Malang.</h3>
+                    <p data-aos="fade-up" data-aos-duration="1000">Maka dari itu, dengan segala hormat, kami bermaksut
+                        mengundang Bapak/Ibu, Sandara/i, untuk hadir
                         pada acara pernikahan kami.</p>
                 </div>
             </div>
 
             <div class="row couple">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-8 text-end">
                             <h3>Bayu Chandra Putra</h3>
@@ -94,7 +101,7 @@
 
                 <span class="heart"><i class="bi bi-heart-fill"></i></span>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1200">
                     <div class="row">
                         <div class="col-4">
                             <img src="img/CHRI2964.JPEG" alt="Bayu" class="img-responsive rounded-circle">
@@ -115,22 +122,26 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center">
-                    <h2 style="color: white; font-family: 'Sacramento';">Informasi Acara</h2>
-                    <p class="alamat">Alamat: Di Rumah Kiki, di Pujon. <br> Alamat lengkap menyusul</p>
+                    <h2 style="color: white; font-family: 'Sacramento';" data-aos="fade-up" data-aos-duration="1000">
+                        Informasi Acara</h2>
+                    <p class="alamat" data-aos="fade-up" data-aos-duration="1000">Alamat: Di Rumah Kiki, di Pujon. <br>
+                        Alamat lengkap menyusul</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.342066925123!2d112.4823232!3d-7.8592243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788739c8322993%3A0xda018fdc5e40f125!2sToko%20Mbak%20Ria%20Sebaluh!5e0!3m2!1sen!2sid!4v1724382418619!5m2!1sen!2sid"
-                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="100%" height="250" style="border:0;" data-aos="fade-up" data-aos-duration="1000"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/LMg2tP7fCCXgRNNq8" target="_blank"
-                        class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
-                    <p class="description">Diharapkan untuk dapat pada tanggal dan alamat yang tertera. Jika pada hari H
+                        class="btn btn-light btn-sm my-3" data-aos="fade-up" data-aos-duration="1000">Klik untuk membuka
+                        peta</a>
+                    <p class="description" data-aos="fade-up" data-aos-duration="1000">Diharapkan untuk dapat pada
+                        tanggal dan alamat yang tertera. Jika pada hari H
                         anda tiba di tujuan namun tidak ada tanda-tanda acara berlangsung, bisa jadi anda salah tempat
                         atau jadwal</p>
                 </div>
             </div>
 
             <div class="row justify-content-center mt-4">
-                <div class="col-md-5 col-10">
+                <div class="col-md-5 col-10" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card text-center text-bg-light mb-5">
                         <div class="card-header">
                             Akad Nikah
@@ -152,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-10">
+                <div class="col-md-5 col-10" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card text-center text-bg-light">
                         <div class="card-header">
                             Resepsi
@@ -182,9 +193,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center">
-                    <span>Perjalanan Cerita Kasih Kami Bermula</span>
-                    <h2>Our Story</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptatibus minus, vel ea ipsum
+                    <span data-aos="fade-up" data-aos-duration="1000">Perjalanan Cerita Kasih Kami Bermula</span>
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Our Story</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cum voluptatibus minus, vel ea ipsum
                         porro placeat nisi nesciunt eos voluptatem?</p>
                 </div>
             </div>
@@ -192,7 +204,7 @@
             <div class="row">
                 <div class="col">
                     <ul class="timeline">
-                        <li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
                             <div class="timeline-image" style="background-image: url(img/IMG-20190622-WA0021.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -207,7 +219,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
+                        <li class="timeline-inverted" data-aos="fade-up" data-aos-duration="1000">
                             <div class="timeline-image" style="background-image: url(img/IMG-20181005-WA0026.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -222,7 +234,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
                             <div class="timeline-image" style="background-image: url(img/IMG-20190803-WA0026.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -247,89 +259,145 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center">
-                    <span>Kenangan yang di abadikan</span>
-                    <h2>Gallery</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad odit repellendus eos nisi.</p>
+                    <span data-aos="fade-up" data-aos-duration="1000">Kenangan yang di abadikan</span>
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Gallery</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ad odit repellendus eos nisi.</p>
                 </div>
             </div>
 
             <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center">
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="img/gallery/1.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/1.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
                     <a href="img/gallery/2.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/2.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="img/gallery/3.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/3.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
                     <a href="img/gallery/4.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/4.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="img/gallery/5.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/5.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
                     <a href="img/gallery/6.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/6.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="img/gallery/7.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/7.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
                     <a href="img/gallery/8.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/8.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="img/gallery/9.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/9.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
                     <a href="img/gallery/10.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/10.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <a href="img/gallery/11.jpg" data-toggle="lightbox" data-caption="This describes the image"
                         data-gallery="mygallery">
                         <img src="img/gallery/thumbnail/11.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="img/gallery/12.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/12.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="img/gallery/13.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/13.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="img/gallery/14.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/14.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="img/gallery/15.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/15.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="img/gallery/16.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/16.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="img/gallery/17.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/17.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="img/gallery/18.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/18.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="img/gallery/19.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/19.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="img/gallery/20.jpg" data-toggle="lightbox" data-caption="This describes the image"
+                        data-gallery="mygallery">
+                        <img src="img/gallery/thumbnail/20.jpg" alt="Kiki & Bayu" class="img-fluid w-100 rounded">
                     </a>
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center mt-5">
-                    <span style="font-size: 2rem;">Video Prewed</span>
-                    <p class="mt-0">You may pause the music first!</p>
+                    <span style="font-size: 2rem;" data-aos="fade-up" data-aos-duration="1000">Video Prewed</span>
+                    <p class="mt-0" data-aos="fade-up" data-aos-duration="1000">You may pause the music first!</p>
                 </div>
                 <div class="col-md-8 col-10 text-center mt-2">
-                    <iframe class="rounded" width="100%" height="315" src="https://www.youtube.com/embed/j-gy0z-8kjk?si=bChRFyvn5eKfThca"
-                        title="YouTube video player" frameborder="0"
+                    <iframe class="rounded" data-aos="fade-up" data-aos-duration="1000" width="100%" height="315"
+                        src="https://www.youtube.com/embed/j-gy0z-8kjk?si=bChRFyvn5eKfThca" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
@@ -342,28 +410,29 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center">
-                    <h2 style="color: white; font-family: 'Sacramento';">Konfirmasi Kedatangan</h2>
-                    <p>Isi form di bawah ini untuk melakukan konfirmasi kedatangan.</p>
+                    <h2 style="color: white;" data-aos="fade-up" data-aos-duration="1000">Konfirmasi Kedatangan</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Isi form di bawah ini untuk melakukan konfirmasi
+                        kedatangan.</p>
                 </div>
             </div>
 
             <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
                 action="https://script.google.com/macros/s/AKfycbx0F0Za4anUHhn6cQKo-FCvAFKTBsUPXqvvbFo2v5w426m2WI25FONJFsEqWdlkFSyv/exec"
                 id="my-form">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
                         <input type="text" class="form-control" id="nama" name="nama">
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <label for="jumlah" class="form-label">Jumlah</label>
                         <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1"
                             value="1">
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <label for="status" class="form-label">Konfirmasi</label>
                         <select name="status" id="status" class="form-select">
@@ -373,12 +442,12 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-12" style="margin-top: 35px;">
+                <div class="col-12" style="margin-top: 35px;" data-aos="fade-up" data-aos-duration="1000">
                     <button class="btn btn-primary">Kirim</button>
                 </div>
             </form>
 
-            <div class="row justify-content-center mt-5">
+            <!-- <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-md-6">
                     <div id="disqus_thread"></div>
                     <script>
@@ -401,6 +470,12 @@
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
                             powered by Disqus.</a></noscript>
                 </div>
+            </div> -->
+
+            <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-md-6">
+                    ashdjashd
+                </div>
             </div>
 
         </div>
@@ -410,9 +485,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center">
-                    <span>ungkapan tanda kasih</span>
-                    <h2>Amplop Online</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eos, consequatur dignissimos atque
+                    <span data-aos="fade-up" data-aos-duration="1000">ungkapan tanda kasih</span>
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Amplop Online</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Ad eos, consequatur dignissimos atque
                         doloremque nesciunt!</p>
                 </div>
             </div>
@@ -420,15 +496,15 @@
             <div class="row justify-content-center text-center">
                 <div class="col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-aos="fade-up" data-aos-duration="1000">
                             <div class="fw-bold">MANDIRI</div>
                             12342312313 - BAYU CHANDRA PUTRA
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-aos="fade-up" data-aos-duration="1000">
                             <div class="fw-bold">BCA</div>
                             987123712 - BAYU CHANDRA PUTRA
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-aos="fade-up" data-aos-duration="1000">
                             <div class="fw-bold">Saweria</div>
                             <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
                         </li>
@@ -460,7 +536,7 @@
 
     <div id="audio-container">
         <audio id="song" autoplay loop>
-            <source src="audio/Kuch Kuch Hota Hai.mp3" type="audio/mp3">
+            <source src="audio/Gunslinger.mp3" type="audio/mp3">
         </audio>
 
         <div class="audio-icon-wrapper" style="display: none;">
@@ -581,6 +657,11 @@
         namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
         document.querySelector('#nama').value = nama;
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

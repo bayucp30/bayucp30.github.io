@@ -27,7 +27,7 @@ body {
 
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .hero h1, .hero h4, .hero p {
@@ -82,7 +82,7 @@ body {
     background-image: url(img/36f8910327ec59957db95ac6c38ce2ae.jpg);
     background-size: cover;
     min-height: 100vh;
-    margin-top: -6rem;
+    margin-top: -4rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
 }
@@ -341,7 +341,7 @@ body {
 }
 
 footer {
-    padding: 3rem;
+    padding: 1rem;
     background-color: var(--pink);
     color: white;
 }
@@ -420,6 +420,11 @@ footer li {
         font-size: 75%;
     }
 
+    .hero h1 {
+        font-family: "Cinzel", serif;
+        font-size: 5rem;
+    }
+
     .simply-countdown>.simply-section {
         padding: 50px;
         margin: 5px;
@@ -492,7 +497,7 @@ footer li {
     }
 
     .simply-countdown>.simply-section {
-        padding: 45px;
+        padding: 35px;
         margin: 3px;
         margin-bottom: 25px;
         margin-top: 15px;
@@ -514,5 +519,13 @@ footer li {
 
     .timeline li .timeline-panel::after {
         top: 36px;
+    }
+
+    .rsvp h2 {
+        font-size: 2rem;
+    }
+
+    .gifts h2 {
+        font-size: 3rem;
     }
 }
